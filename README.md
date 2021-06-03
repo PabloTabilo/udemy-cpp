@@ -1,6 +1,6 @@
 # Presentation
-Complete course of Udemy on C++ for foundations purpose.
-Professor: Abdul Bari
+Complete course of Udemy on C++ for foundations purpose [link](https://www.udemy.com/course/cpp-deep-dive/).
+Professor: [Abdul Bari](https://www.linkedin.com/in/abdul-bari-mohammed-5a328717/)
 
 # Content of the course
 * Basics - Datatypes and Variables
