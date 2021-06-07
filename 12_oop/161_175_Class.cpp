@@ -45,18 +45,36 @@ class Rectangle{
             r = rect.getR();
         }
         int area(){return l*r;}
-        int perimeter(){return 2*l+2*r;}
+        int perimeter();
         void setL(int l){this->l = (l>0?l:0);}
         void setR(int r){this->r = (r>0?r:0);}
         int getL(){return l;}
         int getR(){return r;}
+        bool isSquare();
+        ~Rectangle(); // clear object or deallocation
 };
+
+int Rectangle::perimeter(){
+    return 2 * (l+r);
+}
+
+bool Rectangle::isSquare(){
+    return l == r;
+}
+
+Rectangle::~Rectangle(){
+    cout<<"Rectangle is destroyed"<<endl;
+}
 
 int main(){
     Rectangle r1(10,5); // create on stack
+    Rectangle r3(3,3);
     Rectangle r2(r1);
     cout<<r1.area()<<endl;
     cout<<r2.area()<<endl;
+    cout<<r3.isSquare()<<endl;
+    cout<<r1.isSquare()<<endl;
+
     Rectangle* p = new Rectangle(); // pointer heap
     return 0;
 }
